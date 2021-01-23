@@ -1,0 +1,169 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Calculator - Matyoqubov Firdavs</title>
+    <!-- CSS -->
+    <style>
+    table.tab{border: 2px solid rgb(29, 6, 6); background-color: cornflowerblue;}
+    hr#line{width: 100%; height: 1px; border-color:midnightblue; background-color: navy;}
+    hr#line1{width: 100%; height: 1px; border-color:midnightblue; background-color: navy;}
+    hr#line3{width: 100%; height: 1px; border-color:midnightblue; background-color: navy;}
+    input#a-var{border: 2px solid; width: 100%; }
+    section.sec1{padding: 5px; padding-right: 10px;}
+    input#b-var{border: 2px solid; width: 100%; }
+    section.sec2{padding: 5px; padding-right: 10px;}
+    section#secbut{padding: 5px; padding-right: 10px;}
+    input#button1{cursor: pointer;}
+    input#button2{cursor: pointer;}
+    hr#line2{width: 100%; height: 1px; border-color:midnightblue; background-color: navy;}
+    section#lab1{padding: 0.1px;}
+    section.avtor{padding-left: 15px;}
+    fieldset{border: #007159 solid 2px; border-radius: 10%;}
+    </style>
+</head>
+<body>
+    <table class="tab" align="center">
+        <tr>
+            <td>
+                <Marquee><h2>HISOBLASH UCHUN WEB SAHIFA</h2></Marquee>
+                <hr id="line">
+                <form id="form">
+                    <section class="sec1">
+                <input type="number" id="a-var" placeholder="A ning qiymatini kiriting">
+                    </section>
+
+                    <section class="sec2">
+                <input type="number" id="b-var" placeholder="B ning qiymatini kiriting">
+                    </section>
+                <hr id="line1">
+                <section id="secbut">
+                    <center>
+                    <input type="button" value="Hisoblash" id="button2" onclick="my(form)">
+                    <input type="reset" value="Tozzalash" id="button1" onclick="myy(form)">
+                    </center>
+                </section>
+                <hr id="line2">
+                <section id="lab1">
+                    <fieldset id="a1">
+                        <legend>Yig'indi (a+b)</legend>
+                    <h3 id="otvet_plus" align="center"></h3>
+                    </fieldset>
+
+                    <fieldset id="a2">
+                        <legend>Ayirma (a-b)</legend>
+                    <h3 id="otvet_minus" align="center"></h3>
+                    </fieldset>
+
+                    <fieldset id="a3">
+                        <legend>Bo'linma (a/b)</legend>
+                    <h3 id="otvet_bol" align="center"></h3>
+                    </fieldset>
+
+                    <fieldset id="a4">
+                        <legend>Ko'paytma (a*b)</legend>
+                    <h3 id="otvet_kop" align="center"></h3>  
+                    </fieldset>
+
+                    <fieldset id="a5">
+                        <legend>A ning yuzi</legend>
+                    <h3 id="otvet_yuz" align="center"></h3>  
+                    </fieldset>
+
+                    <fieldset id="a5">
+                        <legend>A ning kvadrati</legend>
+                    <h3 id="otvet_kv" align="center"></h3>  
+                    </fieldset>
+
+                    <fieldset id="a6">
+                        <legend>Eng katta son</legend>
+                    <h3 id="otvet_max" align="center"></h3>  
+                    </fieldset>
+
+                    <fieldset id="a7">
+                        <legend>Eng kichik son</legend>
+                    <h3 id="otvet_min" align="center"></h3>  
+                    </fieldset>
+
+                    <fieldset id="a8">
+                        <legend>A ning 2 lik sanoq sistemasidagi ko'rinishi</legend>
+                    <h3 id="otvet_bin" align="center"></h3>  
+                    </fieldset>
+
+                </section>
+                <hr id="line3">
+                <H3 align="center">DASTURCHI - MATYOQUBOV FIRDAVS</H3>
+                <section class="avtor">
+                    <a href="https://t.me/@xaker_00/">Dasturchi bilan Telegramda bog'lanish</a>
+                    <br>
+                    <a href="https://t.me/mail.ru/">Dasturchiga pochta yo'llash</a>
+                    <br><br>
+                </section>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+//JavaScript
+function my(form){
+    var a = document.getElementById("a-var").value;
+    var b = document.getElementById("b-var").value;
+    var yig,ayr,bol,kop,y,taqq,taq,bin,kv,oct;
+    var c,s=0,p=1;
+
+
+    yig=a+b;
+    ayr=a-b;
+    bol=a/b;
+    kop=a*b;
+    y=a*a;
+    kv=a*4;
+
+    if (a>b){taqq=a} else
+    if (a<b){taqq=b} else
+    if (a=b){taqq="A va B sonlar bir-biriga teng"}
+
+    if (a>b){taq=b} else
+    if (a<b){taq=a} else
+    if (a=b){taq="A va B sonlar bir-biriga teng"}
+
+	while(a>0){
+	c=parseInt(a%2);
+	a=parseInt(a/2);
+	s+=c*p;
+    p*=10;}
+    
+
+    document.getElementById("otvet_plus").innerText = yig;
+    document.getElementById("otvet_minus").innerText = ayr;
+    document.getElementById("otvet_bol").innerText = bol;
+    document.getElementById("otvet_kop").innerText = kop;
+    document.getElementById("otvet_yuz").innerText = y;
+    document.getElementById("otvet_max").innerText = taq;
+    document.getElementById("otvet_min").innerText = taqq;
+    document.getElementById("otvet_bin").innerText = s;
+    document.getElementById("otvet_kv").innerText = kv;
+    document.getElementById("otvet_oct").innerText = ss;
+}
+    </script>
+
+    <script>
+        function myy(form){
+
+    document.getElementById("otvet_plus").innerText = "";
+    document.getElementById("otvet_minus").innerText = "";
+    document.getElementById("otvet_bol").innerText = "";
+    document.getElementById("otvet_kop").innerText = "";
+    document.getElementById("otvet_yuz").innerText = "";
+    document.getElementById("otvet_max").innerText = "";
+    document.getElementById("otvet_min").innerText = "";
+    document.getElementById("otvet_bin").innerText = "";   
+    document.getElementById("otvet_kv").innerText = "";
+        }
+    </script>
+    </s>
+</body>
+</html>

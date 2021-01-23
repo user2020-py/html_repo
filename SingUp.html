@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up IT-uz</title>
+    <style>
+        body{background:url(); font-family: url();}
+        table.tab1{border-radius: 5%; border: 3px #454F5C solid; padding-left: 10px; padding-right: 10px;}
+        h3#h3{text-align: left;}
+        input#sub{width: 50%;}
+        input#pass{width: 95%;}
+        input#text1{border: 2px solid brown;}
+        input#mail{border: 2px solid brown;}
+        input#pass{border: 2px solid brown;}
+        select{outline: 1px solid blue; margin-top: 3px;}
+    </style>
+</head>
+<body>
+    <table class="tab1" align="center">
+        <tr>
+            <td>
+            <H3 id="h3">Sing up</H3>
+            <form action="Test.html">
+                <label for="text1">Your name:</label><BR>
+                <input type="text" id="text1" required><BR><BR>
+
+                <label for="mail">Email:</label><BR>
+                <input type="email" id="mail" required><BR><BR>
+
+                <label for="pass">Password:</label><BR>
+                <input type="password" id="pass" required maxlength="8"><BR><BR>
+
+                <label for="select1">Lesson language:</label><br>
+                <select id="select1">
+                <option value="Uzbek">Uzbek</option>
+                <option value="Russian">Russian</option>
+                <option value="English">English</option>
+                <option value="Arab">Arab</option>
+                <option value="Hind">Hind</option>
+                </select><br><br>
+                <label for="select2">Language programming:</label><br>
+                <select id="select2">
+                <option value="Pascal_ABC">Pascal ABC</option>
+                <option value="Delphi_7">Delphi 7</option>
+                <option value="C++">C++</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Java_Script">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                </select>
+                <br><br>
+                <hr>
+                <center>
+                <input type="submit" id="sub" value="Submit" onclick="my(form)">
+                </center>
+                <br>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
