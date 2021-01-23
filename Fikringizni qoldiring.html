@@ -1,0 +1,58 @@
+<!-- Bu web sahifa 20.06.2020 sanasida Samarqand v.l Narpay tumani Beshqazoq qishlog'idagi 6-sinf o'quvchisi Matyoqubov Firdavs tomonidan yaratildi -->
+<!-- Ushbu web sahifada HTML va CSS dan foydalanildi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikringizni qoldiring</title>
+        <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/3-colors-outline/500/Messages-512.png" type="image/png" />
+        <link href="https://cdn0.iconfinder.com/data/icons/3-colors-outline/500/Messages-512.png" rel="apple-touch-icon" type="image/png">
+        <link href="https://cdn0.iconfinder.com/data/icons/3-colors-outline/500/Messages-512.png" rel="shortcut icon" type="image/png">
+    <style type="text/css">
+        body{background-color: #E6E6E6;}
+        #ic1,#ic2,#ic3{width: 64px; height: 64px;}
+        .text1_div,.email_div,.phone_div{display: flex; border-radius: 5mm; background-color: darkgoldenrod; padding: 10px; width: 530px;}
+        .main{margin: auto; background-color: lightseagreen; display: block; width: 570px; padding-left: 40px; padding-bottom: 20px; padding-top: 10px; padding-right: 10px;}
+        #text1,#email,#phone{font-size: 42px; width: 450px;}
+        #phone{width: 447px;}
+        textarea{font-size: 18px; width: 530px;}
+        #submit{cursor: pointer; border-radius: 7mm; background:linear-gradient(to right,#1FE173,#69E19D); width: 140mm; height: 10mm;}
+        #chbox,.text1_div,.email_div,.phone_div{margin-top: 15px;}
+        .submit_div{margin-top: 30px;}
+        .enter input,textarea{border: none; outline: 2px solid #549A03;}
+        #ic3{margin-right: 3px;}
+        label{font-size: 8mm;}
+        .chbox_div{background-color: #7079AC; border-radius: 2mm; margin-top: 15px; padding-bottom: 10px; width: 540px;}
+        #chbox{width: 6mm; height: 6mm;}
+        .edit input{margin-left: 4px;}
+        #submit:hover{box-shadow: 5px 5px 20px black;}
+        #text1:hover{background-color: lightskyblue; outline: 1px solid black;}
+        #email:hover{background-color: lightskyblue; outline: 1px solid black;}
+        #textarea:hover{background-color: lightskyblue; outline: 1px solid black;}
+        #phone:hover{background-color: lightskyblue; outline: 1px solid black;}
+        .edit div{ box-shadow: 10px 10px 20px black;}
+        textarea{margin-top: 25px;}
+        .chbox_div:hover{background-color: rgb(98, 111, 187);}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="text"><h1>Adminstrator ga xabar qoldirish</h1></div>
+        <div class="form_div">
+            <form class="form">
+                <div class="enter">
+                    <div class="edit">
+                <div class="text1_div"><img src="https://cdn1.iconfinder.com/data/icons/streaming-services-2/256/Contact-512.png" alt="login" id="ic1"><input type="text" id="text1" placeholder="Loginni kiriting" required></div>
+                <div class="email_div"><img src="https://cdn0.iconfinder.com/data/icons/twitter-24/512/168_Twitter_Mail_Sms_Chat-512.png" alt="email" id="ic2"><input type="email" id="email" placeholder="Pochtangizni kiriting" required></div>
+                <div class="phone_div"><img src="https://cdn2.iconfinder.com/data/icons/clean-and-simple/153/Phone-512.png" alt="phone" id="ic3"><input type="tel" id="phone" placeholder="Telefon raqam" required></div>
+                    </div>
+                <div class="textarea_div"><textarea name="textarea" id="textarea" cols="67" rows="15" placeholder="Xabarni kiriting"></textarea></div>
+                </div>
+                <div class="chbox_div"><input type="checkbox" name="checkbox" id="chbox"><label for="chbox">Xabarni kiritilgan pochtoga ham yuborish</label></div>
+                <div class="submit_div"><input type="submit" id="submit" value="Jo'natish"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
